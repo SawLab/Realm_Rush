@@ -62,7 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\EditModeScripts\EditorSnap.cs" />
+    <Compile Include="Assets\Scripts\EditModeScripts\CubeEditor.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\Waypoint.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Sawyer/Repos/Realm_Rush/Realm_Rush/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
