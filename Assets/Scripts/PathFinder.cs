@@ -6,11 +6,20 @@ public class PathFinder : MonoBehaviour
     [SerializeField] Waypoint startWaypoint, endWayPoint;
 
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
+    Vector2Int[] directions =
+    {
+        Vector2Int.up,
+        Vector2Int.right,
+        Vector2Int.down,
+        Vector2Int.left
+    };
+
     // Start is called before the first frame update
     void Start()
     {
         LoadBlocks();
         ColorStartAndEnd();
+        ExploreNeighbors();
     }
 
     private void LoadBlocks()
@@ -35,6 +44,22 @@ public class PathFinder : MonoBehaviour
     {
         startWaypoint.SetTopColor(Color.green);
         endWayPoint.SetTopColor(Color.cyan);
+    }
+
+    private void ExploreNeighbors()
+    {
+        foreach (Vector2Int direction in directions)
+        {
+            Vector2Int nextLocation = startWaypoint.GetGridPos() + direction;
+            try
+            {
+                grid[nextLocation].SetTopColor(Color.magenta);
+            }
+            catch(KeyNotFoundException e)
+            {
+                Debug.Log(e + "Neighbor doesn not exist.");
+            }
+        }
     }
 
 
