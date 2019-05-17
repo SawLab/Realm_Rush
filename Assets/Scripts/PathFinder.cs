@@ -6,6 +6,9 @@ public class PathFinder : MonoBehaviour
     [SerializeField] Waypoint startWaypoint, endWayPoint;
 
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
+    Queue<Waypoint> queue = new Queue<Waypoint>();
+    bool isRunning = true;
+
     Vector2Int[] directions =
     {
         Vector2Int.up,
@@ -19,7 +22,7 @@ public class PathFinder : MonoBehaviour
     {
         LoadBlocks();
         ColorStartAndEnd();
-        ExploreNeighbors();
+        PathFind();
     }
 
     private void LoadBlocks()
@@ -37,7 +40,6 @@ public class PathFinder : MonoBehaviour
                 grid.Add(gridPos, waypoint);
             }
         }
-        print(grid.Count);
     }
 
     private void ColorStartAndEnd()
@@ -46,26 +48,52 @@ public class PathFinder : MonoBehaviour
         endWayPoint.SetTopColor(Color.cyan);
     }
 
-    private void ExploreNeighbors()
+    private void ExploreNeighbors(Waypoint from)
     {
+        if (!isRunning) { return; }
+
         foreach (Vector2Int direction in directions)
         {
-            Vector2Int nextLocation = startWaypoint.GetGridPos() + direction;
+            Vector2Int neighborCoordinates = from.GetGridPos() + direction;
             try
             {
-                grid[nextLocation].SetTopColor(Color.magenta);
+                QueueNewNeighbors(neighborCoordinates);
             }
-            catch(KeyNotFoundException e)
+            catch (KeyNotFoundException e)
             {
-                Debug.Log(e + "Neighbor doesn not exist.");
+                Debug.Log(e + "Neighbor does not exist.");
             }
         }
     }
 
-
-    // Update is called once per frame
-    void Update()
+    private void QueueNewNeighbors(Vector2Int neighborCoordinates)
     {
-        
+        Waypoint neighbor = grid[neighborCoordinates];
+
+        if (neighbor.isExplored) { return; } //do nothing if explored
+
+        neighbor.SetTopColor(Color.magenta);
+        queue.Enqueue(neighbor);
+    }
+
+    private void  PathFind()
+    {
+        queue.Enqueue(startWaypoint);
+
+        while(queue.Count > 0 && isRunning)
+        {
+            var searchCenter = queue.Dequeue();
+            searchCenter.isExplored = true;
+            CheckIfFinished(searchCenter);
+            ExploreNeighbors(searchCenter);
+        }
+    }
+
+    private void CheckIfFinished(Waypoint searchCenter)
+    {
+        if (searchCenter.Equals(endWayPoint))
+        {
+            isRunning = false;
+        }
     }
 }

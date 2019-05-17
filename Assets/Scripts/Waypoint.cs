@@ -2,21 +2,11 @@
 
 public class Waypoint : MonoBehaviour
 {
+    public bool isExplored = false;
+
     Vector2Int gridPos;
 
     const int gridSize = 10;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public int GetGridSize()
     {
