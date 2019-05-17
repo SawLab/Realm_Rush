@@ -6,8 +6,13 @@ public class PathFinder : MonoBehaviour
     [SerializeField] Waypoint startWaypoint, endWayPoint;
 
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
+
     Queue<Waypoint> queue = new Queue<Waypoint>();
+    private List<Waypoint> pathToTake = new List<Waypoint>();
+
     bool isRunning = true;
+
+    Waypoint searchCenter;
 
     Vector2Int[] directions =
     {
@@ -16,14 +21,6 @@ public class PathFinder : MonoBehaviour
         Vector2Int.down,
         Vector2Int.left
     };
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        LoadBlocks();
-        ColorStartAndEnd();
-        PathFind();
-    }
 
     private void LoadBlocks()
     {
@@ -45,23 +42,19 @@ public class PathFinder : MonoBehaviour
     private void ColorStartAndEnd()
     {
         startWaypoint.SetTopColor(Color.green);
-        endWayPoint.SetTopColor(Color.cyan);
+        endWayPoint.SetTopColor(Color.red);
     }
 
-    private void ExploreNeighbors(Waypoint from)
+    private void ExploreNeighbors()
     {
         if (!isRunning) { return; }
 
         foreach (Vector2Int direction in directions)
         {
-            Vector2Int neighborCoordinates = from.GetGridPos() + direction;
-            try
+            Vector2Int neighborCoordinates = searchCenter.GetGridPos() + direction;
+            if (grid.ContainsKey(neighborCoordinates))
             {
                 QueueNewNeighbors(neighborCoordinates);
-            }
-            catch (KeyNotFoundException e)
-            {
-                Debug.Log(e + "Neighbor does not exist.");
             }
         }
     }
@@ -70,10 +63,10 @@ public class PathFinder : MonoBehaviour
     {
         Waypoint neighbor = grid[neighborCoordinates];
 
-        if (neighbor.isExplored) { return; } //do nothing if explored
+        if (neighbor.isExplored || queue.Contains(neighbor)) { return; } //do nothing if explored or already in queue
 
-        neighbor.SetTopColor(Color.magenta);
         queue.Enqueue(neighbor);
+        neighbor.exploredFrom = searchCenter;
     }
 
     private void  PathFind()
@@ -82,18 +75,37 @@ public class PathFinder : MonoBehaviour
 
         while(queue.Count > 0 && isRunning)
         {
-            var searchCenter = queue.Dequeue();
+            searchCenter = queue.Dequeue();
             searchCenter.isExplored = true;
-            CheckIfFinished(searchCenter);
-            ExploreNeighbors(searchCenter);
+            CheckIfFinished();
+            ExploreNeighbors();
         }
     }
 
-    private void CheckIfFinished(Waypoint searchCenter)
+    private void CheckIfFinished()
     {
         if (searchCenter.Equals(endWayPoint))
         {
-            isRunning = false;
+            isRunning = false;          
+
+            Waypoint nextWaypoint = endWayPoint;
+            pathToTake.Add(nextWaypoint);
+
+            while (nextWaypoint.exploredFrom != null)
+            {
+                pathToTake.Add(nextWaypoint.exploredFrom);
+                nextWaypoint = nextWaypoint.exploredFrom;
+            }
+
+            pathToTake.Reverse();
         }
+    }
+
+    public List<Waypoint> GetPath()
+    {
+        LoadBlocks();
+        ColorStartAndEnd();
+        PathFind();
+        return pathToTake;
     }
 }
