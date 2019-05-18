@@ -16,10 +16,10 @@ public class EnemyMovement : MonoBehaviour
     {
         foreach (Waypoint waypoint in path)
         {
-            float xPos = waypoint.transform.position.x;
-            float yPos = waypoint.transform.localScale.y / 2;
-            float zPos = waypoint.transform.position.z;
-            transform.position = new Vector3(xPos, yPos, zPos);
+            MeshRenderer topMeshRenderer = waypoint.transform.Find("Top").GetComponent<MeshRenderer>();
+            float xPos = topMeshRenderer.transform.position.x;
+            float zPos = topMeshRenderer.transform.position.z;
+            transform.position = new Vector3(xPos, 10f, zPos);
             yield return new WaitForSeconds(1f);
         }
     }

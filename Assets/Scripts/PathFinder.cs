@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PathFinder : MonoBehaviour
@@ -67,6 +68,7 @@ public class PathFinder : MonoBehaviour
 
         queue.Enqueue(neighbor);
         neighbor.exploredFrom = searchCenter;
+        searchCenter.isExplored = true;
     }
 
     private void  PathFind()
