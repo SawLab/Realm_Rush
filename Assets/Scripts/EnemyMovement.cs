@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
+    [SerializeField] ParticleSystem damageParticles;
+    [SerializeField] int hitsTillDeath = 10;
+
     // Start is called before the first frame update
     void Start()
     {
+        AddBoxCollider();
         PathFinder pathFinder = FindObjectOfType<PathFinder>();
         var path = pathFinder.GetPath();
-        StartCoroutine(FollowWaypoints(path));     
+        StartCoroutine(FollowWaypoints(path));
     }
 
     IEnumerator FollowWaypoints(List<Waypoint> path)
@@ -18,9 +22,27 @@ public class EnemyMovement : MonoBehaviour
         {
             MeshRenderer topMeshRenderer = waypoint.transform.Find("Top").GetComponent<MeshRenderer>();
             float xPos = topMeshRenderer.transform.position.x;
+            float yPos = gameObject.transform.position.y;
             float zPos = topMeshRenderer.transform.position.z;
-            transform.position = new Vector3(xPos, 10f, zPos);
+            transform.position = new Vector3(xPos, yPos, zPos);
             yield return new WaitForSeconds(1f);
         }
     }
+
+    private void AddBoxCollider()
+    {
+        Collider enemyBoxCollider = gameObject.AddComponent<BoxCollider>();
+        enemyBoxCollider.isTrigger = false;
+    }
+
+    void OnParticleCollision(GameObject other)
+    {
+        //damageParticles.emission.enabled = true;
+
+        if (--hitsTillDeath <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 }
