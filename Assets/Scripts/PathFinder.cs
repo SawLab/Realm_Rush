@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PathFinder : MonoBehaviour
 {
-    [SerializeField] Waypoint startWaypoint, endWayPoint;
+    [SerializeField] Waypoint startWaypoint = null, endWayPoint = null;
 
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
 

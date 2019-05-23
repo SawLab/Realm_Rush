@@ -2,9 +2,9 @@
 
 public class Tower : MonoBehaviour
 {
-    [SerializeField] Transform objectToPan;
-    [SerializeField][Tooltip("How far away the tower can shoot")] float maxRange;
-    [SerializeField] ParticleSystem projectile;
+    [SerializeField] Transform objectToPan = null;
+    [SerializeField][Tooltip("How far away the tower can shoot")] float maxRange = 20;
+    [SerializeField] ParticleSystem projectile = null;
 
     // Start is called before the first frame update
     void Start()

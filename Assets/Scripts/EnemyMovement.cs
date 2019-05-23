@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [SerializeField] ParticleSystem damageParticles;
-
     // Start is called before the first frame update
     void Start()
     {
