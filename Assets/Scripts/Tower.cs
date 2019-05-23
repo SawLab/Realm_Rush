@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
     [SerializeField] Transform objectToPan;
-    [SerializeField] Transform targetEnemy;
+    [SerializeField][Tooltip("How far away the tower can shoot")] float maxRange;
+    [SerializeField] ParticleSystem projectile;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +18,12 @@ public class Tower : MonoBehaviour
         LookAtClosestEnemy();
     }
 
+    private void FireAtEnemy(bool isActive)
+    {
+        var emmisionModule = projectile.emission;
+        emmisionModule.enabled = isActive;
+    }
+
     private void LookAtClosestEnemy()
     {
         var enemies = FindObjectsOfType<EnemyMovement>();
@@ -28,15 +33,23 @@ public class Tower : MonoBehaviour
         
         foreach(var enemy in enemies)
         {
-            float distance = Mathf.Sqrt(Mathf.Pow(gameObject.transform.position.x - enemy.gameObject.transform.position.x, 2)
-                                        + Mathf.Pow(gameObject.transform.position.z - enemy.transform.position.z, 2));
-            if (distance < leastDistance)
+            float distance = Vector3.Distance(gameObject.transform.position, enemy.transform.position);
+       
+            if (distance < leastDistance && distance < maxRange)
             {
                 leastDistance = distance;
                 closestEnemy = enemy;
             }
         }
 
-        if (closestEnemy != null) { objectToPan.LookAt(closestEnemy.transform); }       
+        if (closestEnemy != null)
+        {
+            objectToPan.LookAt(closestEnemy.transform);
+            FireAtEnemy(true);                          //fire at targetted enemy in range
+        }
+        else
+        {
+            FireAtEnemy(false);                         //stop firing if no enemy to target in range
+        }
     }
 }

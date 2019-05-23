@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] ParticleSystem damageParticles;
-    [SerializeField] int hitsTillDeath = 10;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
             float yPos = gameObject.transform.position.y;
             float zPos = topMeshRenderer.transform.position.z;
             transform.position = new Vector3(xPos, yPos, zPos);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1.5f);
         }
     }
 
@@ -33,16 +32,6 @@ public class EnemyMovement : MonoBehaviour
     {
         Collider enemyBoxCollider = gameObject.AddComponent<BoxCollider>();
         enemyBoxCollider.isTrigger = false;
-    }
-
-    void OnParticleCollision(GameObject other)
-    {
-        //damageParticles.emission.enabled = true;
-
-        if (--hitsTillDeath <= 0)
-        {
-            Destroy(gameObject);
-        }
     }
 
 }
