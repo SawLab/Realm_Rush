@@ -84,16 +84,23 @@ public class PathFinder : MonoBehaviour
             isRunning = false;          
 
             Waypoint nextWaypoint = endWayPoint;
-            pathToTake.Add(nextWaypoint);
+
+            SetAsPath(nextWaypoint);
 
             while (nextWaypoint.exploredFrom != null)
             {
-                pathToTake.Add(nextWaypoint.exploredFrom);
+                SetAsPath(nextWaypoint.exploredFrom);
                 nextWaypoint = nextWaypoint.exploredFrom;
             }
 
             pathToTake.Reverse();
         }
+    }
+
+    private void SetAsPath(Waypoint waypoint)
+    {
+        pathToTake.Add(waypoint);
+        waypoint.isPlaceable = false;
     }
 
     public List<Waypoint> GetPath()
