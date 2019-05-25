@@ -5,6 +5,9 @@ public class Tower : MonoBehaviour
     [SerializeField] Transform objectToPan = null;
     [SerializeField][Tooltip("How far away the tower can shoot")] float maxRange = 20;
     [SerializeField] ParticleSystem projectile = null;
+    [SerializeField] AudioSource gunFireSX = null;
+
+    private int _numberOfParticles = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -16,12 +19,18 @@ public class Tower : MonoBehaviour
     void Update()
     {
         LookAtClosestEnemy();
+        int particleCount = projectile.particleCount;
+        if (particleCount > _numberOfParticles)         //new particle has been created so play firing sound
+        {
+            gunFireSX.Play();
+        }
+        _numberOfParticles = particleCount;
     }
 
     private void FireAtEnemy(bool isActive)
     {
         var emmisionModule = projectile.emission;
-        emmisionModule.enabled = isActive;
+        emmisionModule.enabled = isActive;       
     }
 
     private void LookAtClosestEnemy()
@@ -52,4 +61,5 @@ public class Tower : MonoBehaviour
             FireAtEnemy(false);                         //stop firing if no enemy to target in range
         }
     }
+
 }

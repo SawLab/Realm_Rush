@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class PathFinder : MonoBehaviour
@@ -105,9 +104,12 @@ public class PathFinder : MonoBehaviour
 
     public List<Waypoint> GetPath()
     {
-        LoadBlocks();
-        ColorStartAndEnd();
-        PathFind();
+        if (pathToTake.Count == 0)
+        {
+            LoadBlocks();
+            ColorStartAndEnd();
+            PathFind();
+        }
         return pathToTake;
     }
 }
