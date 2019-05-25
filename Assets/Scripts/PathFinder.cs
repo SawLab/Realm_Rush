@@ -39,12 +39,6 @@ public class PathFinder : MonoBehaviour
         }
     }
 
-    private void ColorStartAndEnd()
-    {
-        startWaypoint.SetTopColor(Color.green);
-        endWayPoint.SetTopColor(Color.red);
-    }
-
     private void ExploreNeighbors()
     {
         if (!isRunning) { return; }
@@ -107,7 +101,6 @@ public class PathFinder : MonoBehaviour
         if (pathToTake.Count == 0)
         {
             LoadBlocks();
-            ColorStartAndEnd();
             PathFind();
         }
         return pathToTake;
