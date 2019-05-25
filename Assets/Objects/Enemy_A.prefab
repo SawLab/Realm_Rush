@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6319055604924433398}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -13.941301, y: 37.10353, z: -49.78081}
   m_LocalScale: {x: 0.40000024, y: 0.4, z: 0.40000024}
   m_Children:
@@ -122,8 +122,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db7026bb13c76c40bfacdacaff96d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 10
+  hitPoints: 1
   damageFX: {fileID: 7306661657716439021}
+  deathFX: {fileID: 3662092840505344022, guid: dadd2b6eeeba1dd4d9b2bc8da7f4b3ed, type: 3}
+  audioSource: {fileID: 9115234189006431632, guid: 31a5229fae0cf484db39f43a206be380,
+    type: 3}
+  deathSX: {fileID: 8300000, guid: a0bf1cded099c7546b63b56d2a11b6f4, type: 3}
+  parent: {fileID: 4223470168012848201, guid: 8c46a7c15a4b3ba4bb265537b9e07cbb, type: 3}
 --- !u!65 &3345549793439988892
 BoxCollider:
   m_ObjectHideFlags: 0
