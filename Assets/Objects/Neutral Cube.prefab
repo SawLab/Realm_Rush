@@ -150,11 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf13c195df60fce49a078870f971f999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerToPlace: {fileID: 2571219365597709919, guid: de2f511392b802c43bf536bd943b7b78,
-    type: 3}
-  towerParent: {fileID: 4229193834388417997, guid: 612fb590213784548a9dd166acb8e8ea,
-    type: 3}
-  isExplored: 0
+  isExplored: 1
   exploredFrom: {fileID: 0}
   isPlaceable: 1
 --- !u!65 &3155393789540496675
