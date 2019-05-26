@@ -3176,7 +3176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 979791220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.333, y: 10, z: 10}
+  m_LocalPosition: {x: -43.333, y: 13, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4609,6 +4609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1619580481}
   - component: {fileID: 1619580480}
+  - component: {fileID: 1619580482}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -4714,6 +4715,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1619580482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619580479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b2c1197788d6a4e95bf257c88b399b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerToPlace: {fileID: 2571219365597709919, guid: de2f511392b802c43bf536bd943b7b78,
+    type: 3}
+  towerLimit: 5
 --- !u!4 &1675463374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,

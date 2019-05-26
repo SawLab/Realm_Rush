@@ -7,12 +7,14 @@ public class Tower : MonoBehaviour
     [SerializeField] ParticleSystem projectile = null;
     [SerializeField] AudioSource gunFireSX = null;
 
+    public Waypoint baseWaypoint = null;
+
     private int _numberOfParticles = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

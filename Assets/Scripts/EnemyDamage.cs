@@ -6,7 +6,6 @@ public class EnemyDamage : MonoBehaviour
     [SerializeField] ParticleSystem damageFX = null;
     [SerializeField] GameObject deathFX = null;
     [SerializeField] AudioClip deathSX = null;
-    [SerializeField] Transform parent = null;
 
     private AudioSource audioSource = null;
 
@@ -25,19 +24,9 @@ public class EnemyDamage : MonoBehaviour
 
     private void KillEnemy()
     {
-        GameObject fx = Instantiate(deathFX, transform.position, Quaternion.identity);
-        fx.transform.parent = parent;
+        Instantiate(deathFX, transform.position, Quaternion.identity);
         audioSource.PlayOneShot(deathSX);
-        MeshRenderer mesh = GetComponent<MeshRenderer>();
-        EnemyMovement enemy = GetComponent<EnemyMovement>();
-        Rigidbody rigidBody = GetComponent<Rigidbody>();
-        BoxCollider boxCollider = GetComponent<BoxCollider>();
-        Destroy(mesh);                                      //remove enemy from player view
-        Destroy(enemy);                                     //make enemy untargetable by turrets                                            
-        Destroy(rigidBody);                                 //remove physics of object
-        Destroy(boxCollider);                               //remove collider so turret shots aren't blocked
-        Destroy(gameObject, 3f);                            //Delay destroy gameobject to let any effects finish
-        
+        Destroy(gameObject);                            
     }
 
     private void ProcessHit()
