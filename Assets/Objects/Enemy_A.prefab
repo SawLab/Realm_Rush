@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793b021714ab8034eb0be4e6ad99f7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 0.45
 --- !u!114 &6319715870179724096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +131,6 @@ MonoBehaviour:
   damageFX: {fileID: 7306661657716439021}
   deathFX: {fileID: 3662092840505344022, guid: dadd2b6eeeba1dd4d9b2bc8da7f4b3ed, type: 3}
   deathSX: {fileID: 8300000, guid: a0bf1cded099c7546b63b56d2a11b6f4, type: 3}
-  parent: {fileID: 4223470168012848201, guid: 8c46a7c15a4b3ba4bb265537b9e07cbb, type: 3}
 --- !u!65 &3345549793439988892
 BoxCollider:
   m_ObjectHideFlags: 0

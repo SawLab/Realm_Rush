@@ -22,7 +22,7 @@ public class EnemyDamage : MonoBehaviour
         }
     }
 
-    private void KillEnemy()
+    public void KillEnemy()
     {
         Instantiate(deathFX, transform.position, Quaternion.identity);
         audioSource.PlayOneShot(deathSX);

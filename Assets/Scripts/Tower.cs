@@ -11,12 +11,6 @@ public class Tower : MonoBehaviour
 
     private int _numberOfParticles = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -63,5 +57,4 @@ public class Tower : MonoBehaviour
             FireAtEnemy(false);                         //stop firing if no enemy to target in range
         }
     }
-
 }
