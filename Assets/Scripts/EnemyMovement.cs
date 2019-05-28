@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
     private void AddBoxCollider()
     {
         Collider enemyBoxCollider = gameObject.AddComponent<BoxCollider>();
-        enemyBoxCollider.isTrigger = false;
+        enemyBoxCollider.isTrigger = true;
     }
 
 }
