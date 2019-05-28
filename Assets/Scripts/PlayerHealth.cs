@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
-        healthText.text = playerHealth.ToString();   
+        healthText.text = playerHealth.ToString();
     }
     void OnTriggerEnter(Collider other)
     {
@@ -18,5 +18,6 @@ public class PlayerHealth : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 }

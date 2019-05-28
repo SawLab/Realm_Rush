@@ -33,6 +33,6 @@ public class EnemySpawner : MonoBehaviour
     private void IncrementScore()
     {
         score++;
-        scoreText.text = score.ToString();
+        scoreText.text = "Score: " + score.ToString();
     }
 }

@@ -9,7 +9,6 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AddBoxCollider();
         PathFinder pathFinder = FindObjectOfType<PathFinder>();
         var path = pathFinder.GetPath();
         StartCoroutine(FollowWaypoints(path));
@@ -29,11 +28,4 @@ public class EnemyMovement : MonoBehaviour
         var enemy = gameObject.GetComponent<EnemyDamage>();
         enemy.KillEnemy();
     }
-
-    private void AddBoxCollider()
-    {
-        Collider enemyBoxCollider = gameObject.AddComponent<BoxCollider>();
-        enemyBoxCollider.isTrigger = true;
-    }
-
 }
