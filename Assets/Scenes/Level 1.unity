@@ -1666,6 +1666,7 @@ PrefabInstance:
 --- !u!4 &645766434 stripped
 Transform:
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 4219318968960842, guid: a467c20795e0fed40b0d21d2bebe3b04,
     type: 3}
   m_PrefabInstance: {fileID: 19997589}
@@ -1739,6 +1740,9 @@ Transform:
 --- !u!1 &481466358 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4229193834388417996, guid: 612fb590213784548a9dd166acb8e8ea,
+=======
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 =======
   m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
 >>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
@@ -1892,6 +1896,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &539487084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 90a35e7ab3ddc43438d4b9c75693bd70,
@@ -1944,6 +1949,9 @@ Transform:
   m_PrefabInstance: {fileID: 975675776}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &603484629
+=======
+--- !u!1001 &660850480
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 =======
 --- !u!1001 &660850480
 >>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
@@ -2878,6 +2886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 90a35e7ab3ddc43438d4b9c75693bd70, type: 3}
 --- !u!1 &834228734
 GameObject:
@@ -3037,6 +3046,10 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90a35e7ab3ddc43438d4b9c75693bd70, type: 3}
 --- !u!1001 &836218721
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!1001 &946380414
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 =======
   m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
 --- !u!1001 &946380414
@@ -3269,6 +3282,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
@@ -3336,11 +3350,30 @@ Camera:
   m_StereoSeparation: 0.022
 --- !u!4 &963194228
 Transform:
+=======
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 963194228}
+  - component: {fileID: 963194227}
+  - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &963194226
+AudioListener:
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
+<<<<<<< HEAD
   m_LocalRotation: {x: -0.43253073, y: 0.008477268, z: -0.0037732043, w: -0.90157145}
   m_LocalPosition: {x: 27.43835, y: 103.25631, z: -76.28366}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -3350,12 +3383,18 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &963194229
 AudioSource:
+=======
+  m_Enabled: 1
+--- !u!20 &963194227
+Camera:
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
+<<<<<<< HEAD
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a0bf1cded099c7546b63b56d2a11b6f4, type: 3}
@@ -3452,10 +3491,64 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &979791220
 GameObject:
+=======
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &963194228
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_LocalRotation: {x: -0.43253073, y: 0.008477268, z: -0.0037732043, w: -0.90157145}
+  m_LocalPosition: {x: 27.43835, y: 103.25631, z: -76.28366}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &963194229
+AudioSource:
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   serializedVersion: 6
   m_Component:
   - component: {fileID: 979791221}
@@ -3871,6 +3964,106 @@ BoxCollider:
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1168680209
 MeshRenderer:
+=======
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a0bf1cded099c7546b63b56d2a11b6f4, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &964202764 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1760169314}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &979791220
+GameObject:
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3920,6 +4113,426 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168680207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 300, y: 1, z: 300}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!1001 &1170420383
+=======
+--- !u!114 &979791222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979791220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a107b301dfba044a1a19b7dbbb91fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsBetweenSpawns: 3
+  objectToSpawn: {fileID: 6319715870179724108, guid: e1028b30cf0e46046b6ddb13f3a94040,
+    type: 3}
+  enemyParent: {fileID: 979791220}
+--- !u!1001 &981088236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1619580481}
+    m_Modifications:
+    - target: {fileID: 5557497724502208224, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_Name
+      value: 3,2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.9525871
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -74.67728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 81.03047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 731335371, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+      propertyPath: m_Text
+      value: 3,2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!4 &1005612062 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 650623105}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1026171338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832206461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1064981201 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 219228572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1066161398 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1828325107}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1072373459 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4310211853112428, guid: 37ecf30468607124aafd21227190c343,
+    type: 3}
+  m_PrefabInstance: {fileID: 2006480292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1118767048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1965173625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1119101606 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545358259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1123990056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1619580481}
+    m_Modifications:
+    - target: {fileID: 5557497724502208224, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_Name
+      value: 5,0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.952587
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -74.67728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 61.030468
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 731335371, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+      propertyPath: m_Text
+      value: 5,0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!1001 &1151938306
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1619580481}
+    m_Modifications:
+    - target: {fileID: 5557497724502208224, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_Name
+<<<<<<< HEAD
+      value: -4,2
+=======
+      value: 1,2
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
+      value: -66.04741
+=======
+      value: -16.047413
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -74.67728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 81.03047
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 22
+=======
+      value: 27
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 731335371, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+      propertyPath: m_Text
+<<<<<<< HEAD
+      value: -4,2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!4 &1178188523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1713195649}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1182017361
+=======
+      value: 1,2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!1001 &1159913684
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1619580481}
+    m_Modifications:
+    - target: {fileID: 5557497724502208224, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_Name
+<<<<<<< HEAD
+      value: 4,-1
+=======
+      value: 2,0
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
+      value: 13.952587
+=======
+      value: -6.047413
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -74.67728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
+      value: 51.030468
+=======
+      value: 61.030468
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 31
+=======
+      value: 2
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 731335371, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+      propertyPath: m_Text
+<<<<<<< HEAD
+      value: 4,-1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!4 &1182520625 stripped
+=======
+      value: 2,0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!4 &1161668516 stripped
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 864926872}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
   m_GameObject: {fileID: 1168680207}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -4086,6 +4699,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 864926872}
   m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 --- !u!114 &1231153486 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6603722923791822135, guid: 73a3f3030f8af114988616ba017d61b4,
@@ -5050,6 +5664,7 @@ Transform:
   m_PrefabInstance: {fileID: 1692232916}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1678533297
+<<<<<<< HEAD
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5123,6 +5738,8 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
 --- !u!1001 &1683501319
+=======
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5132,12 +5749,20 @@ PrefabInstance:
     - target: {fileID: 5557497724502208224, guid: 73a3f3030f8af114988616ba017d61b4,
         type: 3}
       propertyPath: m_Name
+<<<<<<< HEAD
       value: -1,-1
+=======
+      value: 9,1
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
       objectReference: {fileID: 0}
     - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -36.047413
+=======
+      value: 63.952587
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
       objectReference: {fileID: 0}
     - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
         type: 3}
@@ -5147,7 +5772,11 @@ PrefabInstance:
     - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
         type: 3}
       propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
       value: 51.030468
+=======
+      value: 71.03047
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
       objectReference: {fileID: 0}
     - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
         type: 3}
@@ -5172,7 +5801,11 @@ PrefabInstance:
     - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 13
+=======
+      value: 56
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
       objectReference: {fileID: 0}
     - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
         type: 3}
@@ -5191,6 +5824,109 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 731335371, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
       propertyPath: m_Text
+<<<<<<< HEAD
+      value: -1,-1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!1001 &1683840458
+=======
+      value: 9,1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+--- !u!1001 &1683501319
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1619580481}
+    m_Modifications:
+    - target: {fileID: 5557497724502208224, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_Name
+<<<<<<< HEAD
+      value: 3,1
+=======
+      value: -1,-1
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
+      value: 3.9525871
+=======
+      value: -36.047413
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -74.67728
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+<<<<<<< HEAD
+      value: 71.03047
+=======
+      value: 51.030468
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_RootOrder
+<<<<<<< HEAD
+      value: 30
+=======
+      value: 13
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 731335371, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+      propertyPath: m_Text
+<<<<<<< HEAD
+      value: 3,1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+=======
       value: -1,-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5268,6 +6004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 --- !u!4 &1685510395 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
@@ -5347,6 +6084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1803117348
 GameObject:
@@ -5440,6 +6178,9 @@ Transform:
   m_PrefabInstance: {fileID: 388609927}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1820947402
+=======
+--- !u!1001 &1713195649
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 =======
 --- !u!1001 &1713195649
 >>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
@@ -6128,6 +6869,7 @@ Transform:
 --- !u!4 &1921122751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+<<<<<<< HEAD
     type: 3}
   m_PrefabInstance: {fileID: 42277036}
   m_PrefabAsset: {fileID: 0}
@@ -6137,6 +6879,17 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 657061084}
   m_PrefabAsset: {fileID: 0}
+=======
+    type: 3}
+  m_PrefabInstance: {fileID: 42277036}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1922073208 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5557497724502208225, guid: 73a3f3030f8af114988616ba017d61b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 657061084}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 --- !u!1001 &1936101135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6681,6 +7434,7 @@ PrefabInstance:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73a3f3030f8af114988616ba017d61b4, type: 3}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &2140998388
 GameObject:
   m_ObjectHideFlags: 0
@@ -6782,6 +7536,9 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 --- !u!1001 &2142591175
+=======
+--- !u!1001 &2108737358
+>>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
 =======
 --- !u!1001 &2108737358
 >>>>>>> parent of acaf759... Rearranged level. Enemies reaching endpoint now decrease player health
