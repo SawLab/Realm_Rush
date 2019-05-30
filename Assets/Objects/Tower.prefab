@@ -49,9 +49,7 @@ MonoBehaviour:
   objectToPan: {fileID: 794656250646984106}
   maxRange: 50
   projectile: {fileID: 1245232879343471105}
-  towerSX: {fileID: 2571219365597709921}
-  gunSFX: {fileID: 0}
-  baseWaypoint: {fileID: 0}
+  gunFireSX: {fileID: 2571219365597709921}
 --- !u!82 &2571219365597709921
 AudioSource:
   m_ObjectHideFlags: 0
@@ -59,13 +57,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2571219365597709918}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 74013e377d916534383abe96d19b2fd7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.45
-  m_Pitch: 0.76
+  m_Volume: 0.34
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0

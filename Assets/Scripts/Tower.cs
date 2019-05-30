@@ -5,8 +5,7 @@ public class Tower : MonoBehaviour
     [SerializeField] Transform objectToPan = null;
     [SerializeField][Tooltip("How far away the tower can shoot")] float maxRange = 20;
     [SerializeField] ParticleSystem projectile = null;
-    [SerializeField] AudioSource towerSX = null;
-    [SerializeField] AudioClip gunSFX = null;
+    [SerializeField] AudioSource gunFireSX = null;
 
     public Waypoint baseWaypoint = null;
 
@@ -19,7 +18,7 @@ public class Tower : MonoBehaviour
         int particleCount = projectile.particleCount;
         if (particleCount > _numberOfParticles)         //new particle has been created so play firing sound
         {
-            towerSX.PlayOneShot(gunSFX);
+            gunFireSX.Play();
         }
         _numberOfParticles = particleCount;
     }

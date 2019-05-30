@@ -6,7 +6,8 @@ public class EnemyDamage : MonoBehaviour
     [SerializeField] ParticleSystem damageFX = null;
     [SerializeField] GameObject deathFX = null;
     [SerializeField] AudioClip deathSX = null;
-    [SerializeField] AudioSource audioSource = null;
+
+    private AudioSource audioSource = null;
 
     void Start()
     {

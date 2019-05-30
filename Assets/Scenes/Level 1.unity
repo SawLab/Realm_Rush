@@ -4200,7 +4200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7a107b301dfba044a1a19b7dbbb91fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsBetweenSpawns: 0.98
+  secondsBetweenSpawns: 3
   objectToSpawn: {fileID: 6319715870179724108, guid: e1028b30cf0e46046b6ddb13f3a94040,
     type: 3}
   enemyParent: {fileID: 979791220}
@@ -4658,7 +4658,7 @@ Transform:
   m_GameObject: {fileID: 1168680207}
   m_LocalRotation: {x: -0, y: -0.00034529547, z: 0, w: 0.99999994}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1240.5299, y: 1, z: 1484.3132}
+  m_LocalScale: {x: 300, y: 1, z: 300}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -7600,11 +7600,6 @@ PrefabInstance:
     - target: {fileID: 9115234189006431635, guid: 31a5229fae0cf484db39f43a206be380,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115234189006431632, guid: 31a5229fae0cf484db39f43a206be380,
-        type: 3}
-      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
