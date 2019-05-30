@@ -127,10 +127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db7026bb13c76c40bfacdacaff96d1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 3
+  hitPoints: 5
   damageFX: {fileID: 7306661657716439021}
   deathFX: {fileID: 3662092840505344022, guid: dadd2b6eeeba1dd4d9b2bc8da7f4b3ed, type: 3}
   deathSX: {fileID: 8300000, guid: a0bf1cded099c7546b63b56d2a11b6f4, type: 3}
+  audioSource: {fileID: 0}
 --- !u!65 &3345549793439988892
 BoxCollider:
   m_ObjectHideFlags: 0
