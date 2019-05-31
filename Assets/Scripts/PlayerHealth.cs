@@ -24,7 +24,6 @@ public class PlayerHealth : MonoBehaviour
             {
                 Destroy(enemy.GetComponent<EnemyMovement>());   //stop enemy movement
             }
-
         }
 
     }

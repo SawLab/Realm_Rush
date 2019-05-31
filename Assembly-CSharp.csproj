@@ -116,6 +116,7 @@
     <Compile Include="Assets\Scripts\SelfDestructor.cs" />
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\TowerFactory.cs" />
+    <Compile Include="Assets\Scripts\UserInput.cs" />
     <Compile Include="Assets\Scripts\Waypoint.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
