@@ -50,6 +50,7 @@ MonoBehaviour:
   maxRange: 50
   projectile: {fileID: 1245232879343471105}
   gunFireSX: {fileID: 2571219365597709921}
+  baseWaypoint: {fileID: 0}
 --- !u!82 &2571219365597709921
 AudioSource:
   m_ObjectHideFlags: 0
@@ -62,7 +63,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 74013e377d916534383abe96d19b2fd7, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.34
+  m_Volume: 0.22
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -308,6 +309,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 3662092840505344017, guid: 697a56cb369c9394eaf7ad1b1297d2da,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662092840505344017, guid: 697a56cb369c9394eaf7ad1b1297d2da,
+        type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3662092840505344023, guid: 697a56cb369c9394eaf7ad1b1297d2da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,16 +373,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662092840505344017, guid: 697a56cb369c9394eaf7ad1b1297d2da,
-        type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662092840505344017, guid: 697a56cb369c9394eaf7ad1b1297d2da,
-        type: 3}
-      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 697a56cb369c9394eaf7ad1b1297d2da, type: 3}

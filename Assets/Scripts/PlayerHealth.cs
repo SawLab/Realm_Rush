@@ -17,6 +17,14 @@ public class PlayerHealth : MonoBehaviour
         if (playerHealth <= 0)
         {
             Destroy(gameObject);
+            Destroy(FindObjectOfType<EnemySpawner>());  //stop spawning enemies
+
+            var enemies = FindObjectsOfType<EnemyMovement>();
+            foreach (var enemy in enemies)
+            {
+                Destroy(enemy.GetComponent<EnemyMovement>());   //stop enemy movement
+            }
+
         }
 
     }
